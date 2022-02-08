@@ -117,7 +117,7 @@ const showQuestion = async (questioInfo) => {
     });
 
     // Handle the answer
-    await handleAnswer(questioInfo.choices[questioInfo.correct_choice] === inquirer.player_choice);
+    await handleAnswer(questioInfo.choices[questioInfo.correct_choice] === answers.player_choice);
 }
 
 
