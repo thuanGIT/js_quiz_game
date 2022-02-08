@@ -97,7 +97,7 @@ const showWinner = () => {
     console.clear();
 
     // Show message
-    const msg = `Congrats, ${player.playerName}! You just got better at JS!`;
+    const msg = `Congrats, ${player.playerName}!`;
 
     // Use figlet to generate ASCII text
     figlet(msg, (err, data) => {
@@ -113,7 +113,6 @@ const showQuestion = async (questioInfo) => {
         type: 'list',
         message: questioInfo.question,
         choices: questioInfo.choices
-
     });
 
     // Handle the answer
